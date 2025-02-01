@@ -10,7 +10,7 @@ import { MegaMenuModule } from 'primeng/megamenu';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,MenubarModule,SidebarModule,  MegaMenuModule, CommonModule    ,RouterLink, RouterLinkActive 
+  imports: [RouterOutlet,MenubarModule,SidebarModule,  MegaMenuModule, CommonModule    ,RouterLink, RouterLinkActive
     ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
@@ -47,13 +47,46 @@ export class AppComponent {
               icon: 'pi pi-fw pi-lock',
               route: '/imageUtil/security'
             }
+
           ]
 
           }
       ]
-        
+
+      ]
+    }, {
+      label: 'new-tech',
+      icon: 'pi pi-fw pi-users',
+      root: true,
+      items: [
+        [
+
+          {items:[
+
+            {
+              label: 'ag-grid',
+              icon: 'pi pi-fw pi-user',
+              route: '/new-tech/ag-grid'
+            },
+            {
+              label: 'animate',
+              icon: 'pi pi-fw pi-user',
+              route: '/new-tech/AnimejsComponent'
+            },
+            {
+              label: 'SuperdiffComponent',
+              icon: 'pi pi-fw pi-lock',
+              route: '/new-tech/SuperdiffComponent'
+            }
+
+          ]
+
+          }
+      ]
+
       ]
     },
+
     // {
     //   label: 'Settings',
     //   icon: 'pi pi-fw pi-cog',
